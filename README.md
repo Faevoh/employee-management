@@ -40,5 +40,5 @@ npm run dev
 - Deactivating an employee's profile
 
 ## Documentation
-- This is a live url of the project:[]()
+- This is a live url of the project:[employee-management](employee-management-lemon.vercel.app)
 - This is a link to the Postman Documentation of the project: [Postman Documentation]()
