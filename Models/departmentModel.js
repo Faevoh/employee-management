@@ -3,9 +3,13 @@ const Schema = mongoose.Schema
 
 const department = new Schema({
     department: {type: String},
-    employees: { 
+    employees: [{ 
         type: Schema.Types.ObjectId, 
         ref: 'employee'
+    }],
+    admin: {
+        type: Schema.Types.ObjectId, 
+        ref: 'admin'
     }
 },
 {

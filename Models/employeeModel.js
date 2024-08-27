@@ -7,7 +7,6 @@ const employee = new Schema({
         type: String,
         unique: true
     },
-    password: {type: String},
     position: {type: String},
     address: {type: String},
     phoneNumber: {type: String},
@@ -19,9 +18,13 @@ const employee = new Schema({
         type: Schema.Types.ObjectId,
         ref: "department"
     },
-    remark: { 
+    remark: [{ 
         type: Schema.Types.ObjectId, 
         ref: 'remark'
+    }],
+    admin: {
+        type: Schema.Types.ObjectId, 
+        ref: 'admin'
     }
 },{
     timestamps: true

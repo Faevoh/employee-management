@@ -2,12 +2,15 @@ const mongoose = require("mongoose");
 
 const admin = new mongoose.Schema({
     organisation: {type: String},
-    name: {type: String},
     email: {
         type: String,
         unique: true
     },
-    password: {type: String}
+    password: {type: String},
+    role: {
+        type: String,
+        default: 'admin'
+    }
 },{
     timestamps: true
 });
