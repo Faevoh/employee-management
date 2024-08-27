@@ -147,6 +147,11 @@ exports.updateEmployee = async(req, res) =>{
             });
         }
         const data = req.body;
+        if(!data){
+            return res.status(400).json({
+                message: "You are not sending any data to update"
+            });
+        }
         const employeeInfo = await employeeModel.findByIdAndUpdate(employeeId ,data, {new: true});
 
         return res.status(200).json({
