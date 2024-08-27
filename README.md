@@ -46,4 +46,4 @@ npm run dev
 
 ## Documentation
 - This is a live url of the project:[employee-management](https://employee-management-lemon.vercel.app/)
-- This is a link to the Postman Documentation of the project: [Postman Documentation]()
+- This is a link to the Postman Documentation of the project: [Postman Documentation](https://documenter.getpostman.com/view/24128426/2sAXjJ4siY)
